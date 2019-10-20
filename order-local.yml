@@ -1,0 +1,26 @@
+spring:
+  devtools:
+    remote:
+      restart:
+        enabled: true
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mall-order?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true& serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    show-sql: true
+
+  freemarker:
+    cache: false
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+
+logging:
+  level:
+    com:
+      mall:
+        dao: debug
+server:
+  port: 8082
