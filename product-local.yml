@@ -1,0 +1,22 @@
+server:
+  port: 8083
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  devtools:
+    remote:
+      restart:
+        enabled: true
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mall-product?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true& serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    show-sql: true
+
+  freemarker:
+    cache: false
