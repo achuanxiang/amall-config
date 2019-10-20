@@ -3,7 +3,6 @@ spring:
     remote:
       restart:
         enabled: true
-
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mall-order?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true& serverTimezone=UTC
