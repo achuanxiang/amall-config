@@ -4,3 +4,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+user:
+  name: xiaowei
+  age: 13
