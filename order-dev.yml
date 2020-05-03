@@ -21,8 +21,7 @@ logging:
     com:
       mall:
         dao: debug
-server:
-  port: 8082
+
 user:
   name: zhangsan
   age: 45
