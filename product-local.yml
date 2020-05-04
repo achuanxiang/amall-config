@@ -20,4 +20,4 @@ spring:
     cache: false
 user:
   name: lisi
-  age: 26
+  age: 260
