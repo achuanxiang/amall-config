@@ -2,3 +2,15 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    product:
+       path: /myProduct/**
+       serviceId: product
+       url: http://localhost:8083/
+       sensitiveHeaders:
+    order:
+       path: /order/**
+       serviceId: order
+       url: http://localhost:8082/
+       sensitiveHeaders:
