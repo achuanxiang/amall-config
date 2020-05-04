@@ -5,7 +5,7 @@ eureka:
 zuul:
   routes:
     product:
-       path: /myProduct/**
+       path: /product/**
        serviceId: product
        url: http://localhost:8083/
        sensitiveHeaders:
