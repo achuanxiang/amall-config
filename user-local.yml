@@ -25,4 +25,4 @@ spring:
         # jedis线程池最小闲置数
         min-idle: 5
         # jedis线程池最大等待时间，ms为单位
-        max-wait: 3000ms
+        max-wait: 1000ms
