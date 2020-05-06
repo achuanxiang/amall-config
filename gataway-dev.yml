@@ -21,3 +21,21 @@ zuul:
     ignored-patterns:
        - /**/productClient/providerList
        - /**/productClient/decreaseStock
+
+spring:
+  redis:
+    database: 4
+    host: localhost
+    password: 123456
+    port: 6379
+    timeout: 10000
+    jedis:
+      pool:
+        #jedis线程池最大活跃数
+        max-active: 20
+        #jedis线程池最大闲置数
+        max-idle: 15
+        # jedis线程池最小闲置数
+        min-idle: 5
+        # jedis线程池最大等待时间，ms为单位
+        max-wait: 1000
